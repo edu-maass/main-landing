@@ -1,5 +1,28 @@
-body { font-family: sans-serif; margin: 0; padding: 0; }
-.header { display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: #F5F5F5; }
-.logo { height: 48px; }
-.wordmark { font-size: 1.5rem; font-weight: bold; margin-left: 0.5rem; }
-nav a { margin: 0 0.5rem; text-decoration: none; color: #333; }
+:root{
+  --beige-claro:#DDCBB7; --cafe-oscuro:#7B4B36; --verde-bosque:#82896E; --terracota:#AD6B4B;
+  --verde-hoja:#6BAE75; --arena-suave:#E1DDD4; --blanco-calido:#F5F5F5; --verde-mediano:#579369; --verde-claro:#4B966A;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--blanco-calido);color:var(--verde-bosque);font-family:Manrope,system-ui,sans-serif}
+.container{max-width:1120px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;background:#ffffffcc;backdrop-filter:blur(6px);border-bottom:1px solid var(--arena-suave);}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.logo-lockup{display:flex;align-items:center;gap:12px}
+.logo{height:44px}
+.wordmark{letter-spacing:.18em;font-weight:700;color:var(--cafe-oscuro)}
+.nav a{margin-left:18px;text-decoration:none;color:var(--verde-bosque)}
+.btn{background:var(--verde-mediano);color:#fff;padding:10px 16px;border-radius:12px;text-decoration:none}
+.hero{background:linear-gradient(135deg,#ffffff, #eaf6ef);border-bottom:1px solid var(--arena-suave)}
+.hero-grid{display:grid;grid-template-columns:1fr;gap:32px;padding:64px 0}
+@media(min-width:900px){.hero-grid{grid-template-columns:1fr 1fr}}
+.portrait-card{position:relative;border:1px solid var(--beige-claro);border-radius:24px;overflow:hidden;background:#fff;box-shadow:0 6px 24px rgba(0,0,0,.06);min-height:340px}
+.portrait-card img{width:100%;height:100%;object-fit:cover}
+.illus{position:absolute;inset:auto -40px -24px -40px;opacity:.7}
+.section{padding:64px 0;border-bottom:1px solid var(--arena-suave);background:#fff}
+.h2{font-family:Outfit,Manrope,sans-serif;font-weight:300;font-size:28px;color:var(--cafe-oscuro)}
+.services{display:grid;grid-template-columns:1fr;gap:20px}
+@media(min-width:900px){.services{grid-template-columns:repeat(4,1fr)}}
+.card{border:1px solid var(--beige-claro);border-radius:20px;padding:20px;background:#fff}
+.footer{background:var(--verde-mediano);color:#fff;padding:40px 0}
+.footer a{color:#fff;opacity:.9;margin:0 10px;text-decoration:none}
+.small{font-size:12px;opacity:.85}
