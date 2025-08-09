@@ -77,3 +77,15 @@ header{position:sticky;top:0;background:#ffffffcc;backdrop-filter:blur(6px);bord
 #about{position:relative;background:transparent}
 #about::before{content:"";position:absolute;inset:0;background:url('./assets/abstract.jpg') center/cover no-repeat;opacity:.18;z-index:0}
 #about > .container{position:relative;z-index:1}
+
+.nav{position:relative}
+.dropdown{position:relative;display:inline-block}
+.dropdown-toggle{cursor:pointer}
+.dropdown-menu{position:absolute;top:100%;left:0;background:#fff;border:1px solid var(--arena-suave);border-radius:10px;box-shadow:0 8px 20px rgba(0,0,0,.08);padding:8px;min-width:220px;display:none;z-index:120}
+.dropdown-menu a{display:block;padding:10px 12px;color:var(--verde-oscuro);text-decoration:none;border-radius:8px}
+.dropdown-menu a:hover{background:#f6f6f6}
+.dropdown:hover .dropdown-menu{display:block}
+
+.service-link{text-decoration:none;color:inherit;display:block}
+.service-link .card{transition:transform .15s ease, box-shadow .15s ease}
+.service-link .card:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,0,0,.08)}
