@@ -75,7 +75,7 @@ header{position:sticky;top:0;background:#ffffffcc;backdrop-filter:blur(6px);bord
 
 /* About section background image */
 #about{position:relative;background:transparent}
-#about::before{content:"";position:absolute;inset:0;background:url('./assets/abstract.jpg') center/cover no-repeat;opacity:.18;z-index:0}
+#about::before{content:"";position:absolute;inset:0;background:url('./assets/abstract.png') center/cover no-repeat;opacity:.18;z-index:0}
 #about > .container{position:relative;z-index:1}
 
 .nav{position:relative}
