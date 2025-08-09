@@ -9,13 +9,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Manrope:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css" />
-  <link rel="icon" href="./assets/logo.png" />
+  <link rel="icon" href="./assets/Banner_Icon.png" />
 </head>
 <body>
   <header>
     <div class="container header-inner">
       <div class="logo-lockup">
-        <img src="./assets/logo.png" alt="Logo" class="logo" />
+        <img src="./assets/banner_Icon.png" alt="Logo icon" class="logo" onerror="this.src='./assets/logo.png'" />
         <span class="wordmark">EDUARDO&nbsp;MAASS</span>
       </div>
       <nav class="nav">
@@ -23,7 +23,6 @@
         <a href="#services">Services</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
-        <a href="#blog">Blog</a>
       </nav>
       <a class="btn" href="#contact">Work with Me</a>
     </div>
@@ -33,20 +32,24 @@
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <h1 style="font-family:Outfit,Manrope,sans-serif;font-weight:300;color:#7B4B36;font-size:40px;line-height:1.2">
+          <h1 class="hero-title">
             Strategic Finance & Risk Management for Growth‑Driven Companies.
           </h1>
           <p style="max-width:560px;color:#5d6a60">
             Fractional CFO services, financial modeling, and tech‑enabled risk solutions to help your business thrive.
           </p>
-          <div style="margin-top:20px">
+          <div style="margin-top:20px;display:flex;flex-wrap:wrap;gap:10px">
             <a class="btn" href="#contact">Work with Me</a>
-            <a style="margin-left:10px;border:1px solid #b7c1b6;border-radius:12px;padding:10px 16px;text-decoration:none;color:#7B4B36;background:#fff" href="https://www.upwork.com/" target="_blank" rel="noopener">View My Work on Upwork</a>
+            <a style="border:1px solid #b7c1b6;border-radius:12px;padding:10px 16px;text-decoration:none;color:var(--verde-oscuro);background:#fff" href="https://www.upwork.com/freelancers/~013babe51ec3dc3461" target="_blank" rel="noopener">View My Work on Upwork</a>
+            <a class="btn btn-ahal" href="https://ahalfinancial.com/" target="_blank" rel="noopener">
+              <span class="ahal-badge" aria-hidden="true">AH</span>
+              <img class="ahal-logo" src="./assets/ahal-logo.png" alt="AHAL Financial" onerror="this.previousElementSibling.style.display='inline-grid';this.style.display='none'"/>
+              <span>Visit AHAL Financial</span>
+            </a>
           </div>
         </div>
         <div class="portrait-card">
           <img src="./assets/portrait.png" alt="Eduardo Maass — Portrait"/>
-          <img class="illus" src="./assets/fintech-lines.svg" alt="" />
         </div>
       </div>
     </section>
@@ -60,7 +63,6 @@
           </p>
           <div class="portrait-card" style="min-height:220px">
             <img src="./assets/abstract.jpg" alt="Abstract finance" />
-            <img class="illus" src="./assets/fintech-coinorbit.svg" alt="" />
           </div>
         </div>
       </div>
@@ -95,20 +97,49 @@
     <section id="contact" class="section" style="background:#f0ebe5">
       <div class="container" style="text-align:center">
         <div class="logo-lockup" style="justify-content:center;margin-bottom:12px">
-          <img src="./assets/logo.png" class="logo" alt="Logo"/><span class="wordmark">EDUARDO&nbsp;MAASS</span>
+          <img src="./assets/banner_Icon.png" class="logo" alt="Logo icon" onerror="this.src='./assets/logo.png'"/><span class="wordmark">EDUARDO&nbsp;MAASS</span>
         </div>
         <h3 class="h2">Let’s discuss your next growth move</h3>
         <p>Book a 30‑minute consultation to map the quickest, safest path to your next milestone.</p>
         <div style="margin-top:12px">
-          <a class="btn" href="mailto:contact@ahalfinancial.com">Schedule Consultation</a>
-          <a style="margin-left:10px;border:1px solid #b7c1b6;border-radius:12px;padding:10px 16px;text-decoration:none;color:#7B4B36;background:#fff" href="https://ahalfinancial.com/" target="_blank" rel="noopener">Visit AHAL Financial</a>
+          <a class="btn" href="mailto:contact@eduardomaass.com">Schedule Consultation</a>
+          <a style="margin-left:10px;border:1px solid #b7c1b6;border-radius:12px;padding:10px 16px;text-decoration:none;color:var(--verde-oscuro);background:#fff" href="https://ahalfinancial.com/" target="_blank" rel="noopener">Visit AHAL Financial</a>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container small">© 2025 Luis Eduardo Maass — Work · Services · About · Contact · Blog</div>
+    <div class="container footer-rt-grid">
+      <div class="rt-newsletter">
+                <p class="rt-news-text">Join our newsletter to stay up to date on features and releases.</p>
+        <form class="rt-news-form" onsubmit="event.preventDefault();">
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+        <p class="small rt-consent">By subscribing you agree to with our Privacy Policy and provide consent to receive updates from our company.</p>
+      </div>
+
+      <div class="rt-col">
+        <h4>Contact Us</h4>
+        <a href="mailto:contacto@eduardomaass.com"><span class="icon">✉️</span> contacto@eduardomaass.com</a>
+        <a href="https://wa.me/5219982238458" target="_blank" rel="noopener"><span class="icon">🟢</span> Whatsapp: +52 1 998 223 8458</a>
+        <a href="tel:+529982238458"><span class="icon">📞</span> MX: +52 998 223 8458</a>
+        <a href="#"><span class="icon">📅</span> Schedule a meeting</a>
+      </div>
+
+      <div class="rt-col">
+        <h4>Follow Us</h4>
+        <a href="#"><span class="icon">f</span> Facebook</a>
+        <a href="#"><span class="icon">◎</span> Instagram</a>
+      </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+      <div class="languages">Spanish · English</div>
+      <div class="legal copyrights">© 2025 Luis Eduardo Maass</div>
+    </div>
   </footer>
 
   <script src="./main.js"></script>
