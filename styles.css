@@ -34,7 +34,9 @@ header{position:sticky;top:0;background:#ffffffcc;backdrop-filter:blur(6px);bord
 .card{border:1px solid var(--beige-claro);border-radius:20px;padding:20px;background:#fff}
 
 /* Footer (Rutopía-style) */
-.footer{background:var(--verde-oscuro);color:#e8efe9;padding:56px 0 28px}
+.footer{background:var(--verde-oscuro);color:#e8efe9;padding:56px 0 28px;font-weight:300}
+.footer h4,.footer .footer-title{color:var(--terracota);font-weight:600}
+.footer a{font-weight:300}
 .footer-top{display:grid;grid-template-columns:1.4fr 2fr;gap:28px;align-items:start}
 @media(min-width:1000px){.footer-top{grid-template-columns:1.2fr 2fr}}
 .footer-brand .logo{height:48px;width:48px}
@@ -54,7 +56,7 @@ header{position:sticky;top:0;background:#ffffffcc;backdrop-filter:blur(6px);bord
 @media(max-width:700px){.footer-rt-grid{grid-template-columns:1fr}}
 .rt-newsletter,.rt-col{min-width:0}
 .rt-newsletter{display:flex;flex-direction:column;gap:10px}
-.rt-logo-circle{width:24px;height:24px;border-radius:50%;background:#FF7A00;color:#fff;display:grid;place-items:center;line-height:1;font-weight:700;font-size:10px}
+.rt-logo-circle{width:24px;height:24px;border-radius:50%;background:#ffffff;color:#fff;display:grid;place-items:center;line-height:1;font-weight:700;font-size:10px}
 .rt-logo{width:24px;height:24px;object-fit:contain}
 .rt-news-text{max-width:360px}
 .rt-news-form{display:flex;gap:10px;flex-wrap:wrap}
@@ -67,3 +69,11 @@ header{position:sticky;top:0;background:#ffffffcc;backdrop-filter:blur(6px);bord
 .rt-col a:hover{opacity:1;text-decoration:underline}
 .rt-accent{color:#FFD66E}
 .icon{display:inline-block;width:18px;text-align:center;margin-right:6px}
+
+.lang-toggle{margin-left:18px;border:1px solid var(--arena-suave);padding:6px 10px;border-radius:10px;text-decoration:none;color:var(--verde-oscuro);background:#fff}
+.lang-toggle:hover{background:#f7f7f7}
+
+/* About section background image */
+#about{position:relative;background:transparent}
+#about::before{content:"";position:absolute;inset:0;background:url('./assets/abstract.jpg') center/cover no-repeat;opacity:.18;z-index:0}
+#about > .container{position:relative;z-index:1}
