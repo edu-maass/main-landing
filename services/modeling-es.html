@@ -24,8 +24,8 @@
     "@graph":[
       {"@type":"Service","@id":"https://www.eduardomaass.com/services/modeling-es.html#servicio","serviceType":"Modelaje Financiero y Valuación","provider":{"@type":"Person","@id":"https://www.eduardomaass.com/index-es.html#persona"}},
       {"@type":"FAQPage","@id":"https://www.eduardomaass.com/services/modeling-es.html#faq","mainEntity":[
-        {"@type":"Question","name":"¿Qué define a un buen modelo financiero?","acceptedAnswer":{"@type":"Answer","text":"Debe capturar los impulsores clave (volumen, precio, conversión, CAC/LTV), conectarse con estados contables y soportar escenarios. Construimos modelos por impulsores con entradas claras, control de versiones y trazabilidad para decisiones confiables de fundadores e inversionistas."}},
-        {"@type":"Question","name":"¿Preparan valuaciones para levantamiento de capital?","acceptedAnswer":{"@type":"Answer","text":"Sí. Elaboramos DCF, análisis de múltiplos de mercado y de transacciones comparables y resumimos supuestos, sensibilidades y riesgos clave. Los entregables son aptos para inversionistas y bilingües (ES/EN)."}}
+        {"@type":"Question","name":"¿Qué define a un buen modelo financiero?","acceptedAnswer":{"@type":"Answer","text":"Debe capturar impulsores (adquisición, conversión, precio, retención, estructura de costos), conectarse con estados contables y soportar escenarios y sensibilidades. Implementamos control de versiones y trazabilidad para decisiones confiables."}},
+        {"@type":"Question","name":"¿Preparan valuaciones para levantamiento?","acceptedAnswer":{"@type":"Answer","text":"Sí. Combinamos DCF con evidencia de mercado (múltiplos y transacciones comparables), documentamos supuestos y riesgos, y entregamos materiales aptos para inversionistas en ES/EN."}}
       ]}
     ]}
   </script>
@@ -34,7 +34,7 @@
   <header>
     <div class="container header-inner">
       <div class="logo-lockup">
-        <img src="../assets/banner_Icon.png" class="logo" width="44" height="44" alt="Icono"/>
+        <img src="../assets/Banner_Icon.png" class="logo" width="44" height="44" alt="Icono"/>
         <span class="wordmark">EDUARDO&nbsp;MAASS</span>
       </div>
       <nav class="nav">
@@ -48,13 +48,58 @@
     </div>
   </header>
   <main>
-    <section class="section">
+    <section class="section" style="padding-top:24px">
       <div class="container">
+        <figure style="margin:0 0 16px 0"><img src="../assets/abstract.jpg" alt="Modelaje financiero" width="1200" height="700" loading="lazy" style="width:100%;height:auto;border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,.08)"/></figure>
         <h1 class="h2">Modelaje Financiero y Valuación</h1>
-        <p>Modelos y valuaciones para decisiones, crecimiento y levantamiento.</p>
+        <p>Construimos modelos de decisión que hacen explícitos y medibles los impulsores del negocio. Organizamos el modelo alrededor de adquisición, conversión, precio, retención y estructura de costos para pronosticar ingresos, margen y flujo de efectivo con credibilidad. Alineamos el modelo con estados contables y calendario de caja, agregamos escenarios y sensibilidades, e implementamos una rutina de control de versiones para que el equipo trabaje con una sola fuente de verdad. Para consejo e inversionistas, incorporamos vistas de métricas (cohortes, economía unitaria y cascadas de margen) que comunican desempeño y riesgo con claridad.</p>
+        <p>En valuación combinamos flujos descontados con evidencia de mercado (múltiplos y transacciones comparables), documentamos supuestos y factores de riesgo y presentamos una lógica transparente para negociaciones más ágiles. Para presupuestos y pronósticos, creamos un plan de 12–18 meses con actualizaciones rodantes y lo vinculamos a la caja semanal para detectar desviaciones temprano. El entregable no es solo una hoja de cálculo: es un sistema operativo para decisiones, levantamiento y accountability que escala con tu empresa.</p>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <div class="container">
+        <h2 class="h2">Preguntas Frecuentes</h2>
+        <details><summary>¿Qué define a un buen modelo financiero?</summary><p>Impulsores claros, vínculo contable y escenarios, con gobernanza de versiones y trazabilidad. Debe ser legible, tolerante al cambio y apto para decisiones.</p></details>
+        <details><summary>¿Preparan valuaciones para levantamiento?</summary><p>Sí—DCF, múltiplos de mercado y comparables con supuestos, sensibilidades y nota de riesgos, en español e inglés.</p></details>
       </div>
     </section>
   </main>
-  <footer class="footer"><div class="container footer-bottom"><div class="languages">Español · Inglés</div><div class="legal copyrights">© 2025 Luis Eduardo Maass</div></div></footer>
+
+  <footer class="footer">
+    <div class="container footer-rt-grid">
+      <div class="rt-newsletter">
+        <img class="rt-logo" src="../assets/Banner_Icon.png" alt="Icono" width="24" height="24"/>
+        <p class="rt-news-text">Únete a nuestro boletín para enterarte de lanzamientos y novedades.</p>
+        <form class="rt-news-form" onsubmit="event.preventDefault();">
+          <input type="email" placeholder="Ingresa tu correo" required />
+          <button type="submit">Suscribirme</button>
+        </form>
+        <p class="small rt-consent">Al suscribirte aceptas nuestro Aviso de Privacidad y recibir comunicaciones.</p>
+      </div>
+      <div class="rt-col">
+        <h4>Nuestro Sitio</h4>
+        <a href="../index-es.html#work">Trayectoria</a>
+        <a href="../index-es.html#services">Servicios</a>
+        <a href="../index-es.html#about">Acerca</a>
+        <a href="../index-es.html#contact">Contacto</a>
+      </div>
+      <div class="rt-col">
+        <h4>Contacto</h4>
+        <a href="mailto:contacto@eduardomaass.com"><span class="icon">✉️</span> contacto@eduardomaass.com</a>
+        <a href="https://wa.me/5219982238458" target="_blank" rel="noopener"><span class="icon">🟢</span> +52 1 998 223 8458</a>
+        <a href="#"><span class="icon">📅</span> Agendar una reunión</a>
+      </div>
+      <div class="rt-col">
+        <h4>Síguenos</h4>
+        <a href="#" rel="noopener" aria-label="Facebook"><span class="icon">f</span> Facebook</a>
+        <a href="#" rel="noopener" aria-label="Instagram"><span class="icon">◎</span> Instagram</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <div class="languages">Español · Inglés</div>
+      <div class="legal copyrights">© 2025 Luis Eduardo Maass</div>
+    </div>
+  </footer>
 </body>
 </html> 

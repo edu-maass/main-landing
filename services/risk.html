@@ -24,9 +24,9 @@
     "@graph":[
       {"@type":"Service","@id":"https://www.eduardomaass.com/services/risk.html#service","serviceType":"Enterprise Risk Management & FX Risk","provider":{"@type":"Person","@id":"https://www.eduardomaass.com/#person"},"availableLanguage":["en","es"],"offers":{"@type":"Offer","url":"https://www.eduardomaass.com/services/risk.html"}},
       {"@type":"FAQPage","@id":"https://www.eduardomaass.com/services/risk.html#faq","mainEntity":[
-        {"@type":"Question","name":"Which risks do you prioritize first?","acceptedAnswer":{"@type":"Answer","text":"We map financial, market, operational and compliance risks, then rank by probability/impact. For founders, liquidity, FX volatility (USD/MXN) and concentration risk usually rank highest. We build a mitigation plan with hedging, diversification, insurance and controls, and install governance for continuous monitoring."}},
-        {"@type":"Question","name":"Do you design and execute FX hedging?","acceptedAnswer":{"@type":"Answer","text":"Yes. We quantify currency exposure, set policy and risk limits, and select instruments (forwards, NDFs, natural hedges). We integrate hedges into cash forecasts and covenants so treasury decisions remain aligned with working‑capital needs and board policy."}},
-        {"@type":"Question","name":"What does ERM implementation include?","acceptedAnswer":{"@type":"Answer","text":"Risk register and owners, KRIs and thresholds, monthly and quarterly reporting to leadership/board, policies and playbooks for incident response, and integration of risk into budgeting and strategic planning so risk is managed continuously—not ad hoc."}}
+        {"@type":"Question","name":"Which risks do you prioritize first?","acceptedAnswer":{"@type":"Answer","text":"We map financial, market, operational and compliance risks, then rank by probability/impact. Liquidity, FX volatility (USD/MXN) and concentration risk tend to rank highest for founders."}},
+        {"@type":"Question","name":"Do you design and execute FX hedging?","acceptedAnswer":{"@type":"Answer","text":"Yes. We quantify currency exposure, set policy and limits, and select instruments (forwards, NDFs, natural hedges). Hedges are integrated into cash forecasts and covenants."}},
+        {"@type":"Question","name":"What does ERM implementation include?","acceptedAnswer":{"@type":"Answer","text":"Risk register, owners, KRIs, thresholds, monthly/quarterly reporting to leadership/board, incident playbooks, and integration of risk into budgeting and strategy."}}
       ]}
     ]}
   </script>
@@ -35,7 +35,7 @@
   <header>
     <div class="container header-inner">
       <div class="logo-lockup">
-        <img src="../assets/banner_Icon.png" class="logo" width="44" height="44" alt="Icon"/>
+        <img src="../assets/Banner_Icon.png" class="logo" width="44" height="44" alt="Icon"/>
         <span class="wordmark">EDUARDO&nbsp;MAASS</span>
       </div>
       <nav class="nav">
@@ -49,13 +49,59 @@
     </div>
   </header>
   <main>
-    <section class="section">
+    <section class="section" style="padding-top:24px">
       <div class="container">
+        <figure style="margin:0 0 16px 0"><img src="../assets/abstract.jpg" alt="Risk and treasury abstract" width="1200" height="700" loading="lazy" style="width:100%;height:auto;border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,.08)"/></figure>
         <h1 class="h2">Risk Management & Hedging</h1>
-        <p>ERM for founders: FX policy and hedging, liquidity protection, KRIs, and board‑ready reporting to build resilience and investor confidence.</p>
+        <p>Resilience by design: we install an enterprise risk management (ERM) program that is proportionate to the company’s scale but rigorous enough for board and investor scrutiny. We start with a sharp view of liquidity risk, FX exposure, and customer/supplier concentration, then extend to operational, market, and compliance fronts. We quantify exposure, prioritize by probability and impact, and create a mitigation plan that mixes hedging, diversification, insurance, and process controls. Governance follows: owners, thresholds, and reporting that make risk management continuous, not episodic.</p>
+        <p>For currency risk, we define policy and guardrails, size exposure by currency and time bucket, and choose instruments such as forwards, NDFs, and natural hedges. Treasury routines connect hedges to the cash forecast and covenants so protection never competes with working‑capital needs. We also build KRIs tied to the model and margin logic, ensuring that FX, pricing, and cost dynamics stay visible. The outcome is a tighter cash runway, fewer shocks, and a narrative that increases investor confidence by demonstrating disciplined risk practice.</p>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <div class="container">
+        <h2 class="h2">FAQ</h2>
+        <details><summary>Which risks do you prioritize first?</summary><p>Liquidity, FX volatility and concentration risk typically rank highest; we address them first with visibility, guardrails and controls.</p></details>
+        <details><summary>Do you design and execute FX hedging?</summary><p>Yes—policy, limits, instrument selection, execution support, and integration into treasury and the forecast.</p></details>
+        <details><summary>What does ERM implementation include?</summary><p>Risk register, owners, KRIs, thresholds, leadership/board reporting, incident playbooks, and embedding risk into budgeting and strategy.</p></details>
       </div>
     </section>
   </main>
-  <footer class="footer"><div class="container footer-bottom"><div class="languages">Spanish · English</div><div class="legal copyrights">© 2025 Luis Eduardo Maass</div></div></footer>
+
+  <footer class="footer">
+    <div class="container footer-rt-grid">
+      <div class="rt-newsletter">
+        <img class="rt-logo" src="../assets/Banner_Icon.png" alt="Brand icon" width="24" height="24"/>
+        <p class="rt-news-text">Join our newsletter to stay up to date on features and releases.</p>
+        <form class="rt-news-form" onsubmit="event.preventDefault();">
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+        <p class="small rt-consent">By subscribing you agree to with our Privacy Policy and provide consent to receive updates from our company.</p>
+      </div>
+      <div class="rt-col">
+        <h4>Our Site</h4>
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#services">Services</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#contact">Contact</a>
+      </div>
+      <div class="rt-col">
+        <h4>Contact Us</h4>
+        <a href="mailto:contacto@eduardomaass.com"><span class="icon">✉️</span> contacto@eduardomaass.com</a>
+        <a href="https://wa.me/5219982238458" target="_blank" rel="noopener"><span class="icon">🟢</span> +52 1 998 223 8458</a>
+        <a href="#"><span class="icon">📅</span> Schedule a meeting</a>
+      </div>
+      <div class="rt-col">
+        <h4>Follow Us</h4>
+        <a href="#" rel="noopener" aria-label="Facebook"><span class="icon">f</span> Facebook</a>
+        <a href="#" rel="noopener" aria-label="Instagram"><span class="icon">◎</span> Instagram</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <div class="languages">Spanish · English</div>
+      <div class="legal copyrights">© 2025 Luis Eduardo Maass</div>
+    </div>
+  </footer>
 </body>
 </html> 
